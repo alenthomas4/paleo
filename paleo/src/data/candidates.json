@@ -22,28 +22,49 @@
       }
     },
     {
-      "modalKey": "african",
-      "name": "African Bush Elephant",
-      "sci": "Loxodonta africana",
+      "modalKey": "forest",
+      "name": "African Forest Elephant",
+      "sci": "Loxodonta cyclotis",
       "icon": "🐘",
-      "score": 97,
-      "habitat": "Savannah & open woodland",
-      "range": "Sub-Saharan Africa",
-      "mass": "6,000 kg",
+      "score": 96,
+      "habitat": "Equatorial rainforest",
+      "range": "Central & West Africa",
+      "mass": "2,700 kg",
       "divTime": "6–7 Mya",
-      "tags": ["Vulnerable", "Herbivore", "Megafauna"],
-      "forText": "Body mass closely matches mammoth profile. Strong ecosystem-engineering behaviour well documented across African biomes.",
-      "againstText": "Greater genomic divergence than Asian elephant. Tropical specialist — cold-adaptation pathway significantly less clear.",
+      "tags": ["Endangered", "Herbivore", "Forest specialist"],
+      "forText": "More recently validated as a distinct species with its own genome. Forest elephant lineage provides a separate reference point for mammoth reconstruction distinct from the savanna elephant.",
+      "againstText": "Forest specialist adapted to equatorial rainforest — ecologically even further from the mammoth's open periglacial steppe than the savanna elephant.",
       "ecoFactors": {
         "habitatOverlap": 3,
         "climateMatch": 5,
-        "trophicPresence": 70,
+        "trophicPresence": 65,
         "timeSinceExtinction": 6000,
         "populationTrend": "decreasing"
       }
     }
   ],
   "nfwolf": [
+    {
+      "modalKey": "greenwolf",
+      "name": "Greenland Wolf",
+      "sci": "Canis lupus orion",
+      "icon": "🐺",
+      "score": 99,
+      "habitat": "Arctic tundra & coastal ice edge",
+      "range": "Greenland",
+      "mass": "38 kg",
+      "divTime": "0.1 Mya",
+      "tags": ["Island subspecies", "Apex predator", "Arctic specialist"],
+      "forText": "Arctic island wolf subspecies — the closest living ecological analogue to the Newfoundland wolf's insular, high-latitude lifestyle and isolated prey specialisation.",
+      "againstText": "Greenland's prey base is dominated by musk ox and Arctic hare rather than the caribou and moose the Newfoundland wolf depended on.",
+      "ecoFactors": {
+        "habitatOverlap": 82,
+        "climateMatch": 88,
+        "trophicPresence": 70,
+        "timeSinceExtinction": 94,
+        "populationTrend": "stable"
+      }
+    },
     {
       "modalKey": "greywolf",
       "name": "Grey Wolf",
@@ -64,30 +85,30 @@
         "timeSinceExtinction": 94,
         "populationTrend": "stable"
       }
-    },
-    {
-      "modalKey": "coyote",
-      "name": "Coyote",
-      "sci": "Canis latrans",
-      "icon": "🦊",
-      "score": 72,
-      "habitat": "Grassland, scrubland & suburban",
-      "range": "North & Central America",
-      "mass": "13 kg",
-      "divTime": "3.0 Mya",
-      "tags": ["Least concern", "Generalist", "Highly adaptable"],
-      "forText": "Shares Atlantic Canada's coastal ecosystems and is known to rapidly fill trophic gaps left by wolves. Highly plastic predator.",
-      "againstText": "Trophic mismatch — coyotes are mesopredators. Their prey base doesn't replicate the wolf's role in regulating caribou and moose populations.",
-      "ecoFactors": {
-        "habitatOverlap": 85,
-        "climateMatch": 78,
-        "trophicPresence": 38,
-        "timeSinceExtinction": 94,
-        "populationTrend": "increasing"
-      }
     }
   ],
   "dodo": [
+    {
+      "modalKey": "nzpigeon",
+      "name": "New Zealand Pigeon",
+      "sci": "Hemiphaga novaeseelandiae",
+      "icon": "🕊️",
+      "score": 73,
+      "habitat": "Temperate rainforest & forest edge",
+      "range": "New Zealand",
+      "mass": "0.65 kg",
+      "divTime": "~18 Mya",
+      "tags": ["Least concern", "Frugivore", "Island endemic"],
+      "forText": "Among the largest frugivorous pigeons — body mass and island forest ecology closer to the dodo's niche than most Columbidae. Documented disperser of large-seeded native trees.",
+      "againstText": "Different ocean basin with no direct evolutionary connection to the Mauritius lineage. Diverged ~18 Mya — extensive genomic reconstruction still required.",
+      "ecoFactors": {
+        "habitatOverlap": 42,
+        "climateMatch": 58,
+        "trophicPresence": 52,
+        "timeSinceExtinction": 345,
+        "populationTrend": "stable"
+      }
+    },
     {
       "modalKey": "nicobar",
       "name": "Nicobar Pigeon",
@@ -108,70 +129,49 @@
         "timeSinceExtinction": 345,
         "populationTrend": "decreasing"
       }
-    },
-    {
-      "modalKey": "rockdove",
-      "name": "Rock Dove",
-      "sci": "Columba livia",
-      "icon": "🕊️",
-      "score": 61,
-      "habitat": "Cliffs, urban & coastal areas",
-      "range": "Worldwide",
-      "mass": "0.35 kg",
-      "divTime": "~25 Mya",
-      "tags": ["Least concern", "Generalist", "Highly adaptable"],
-      "forText": "Well-studied genome with decades of breeding research. Accessible reference for pigeon-lineage genomic work.",
-      "againstText": "Diverged ~25 Mya. Urban generalist with no island frugivore behaviour — seed dispersal ecology entirely absent from its profile.",
-      "ecoFactors": {
-        "habitatOverlap": 18,
-        "climateMatch": 34,
-        "trophicPresence": 31,
-        "timeSinceExtinction": 345,
-        "populationTrend": "increasing"
-      }
     }
   ],
   "labduck": [
     {
-      "modalKey": "eider",
-      "name": "Common Eider",
-      "sci": "Somateria mollissima",
+      "modalKey": "stellers",
+      "name": "Steller's Eider",
+      "sci": "Polysticta stelleri",
       "icon": "🦆",
-      "score": 78,
-      "habitat": "Rocky coastline & marine",
-      "range": "North Atlantic & Arctic",
-      "mass": "2.2 kg",
-      "divTime": "~8 Mya",
-      "tags": ["Least concern", "Seaduck", "Molluscivore"],
-      "forText": "Shares the same molluscivore niche along North Atlantic coastlines. Habitat and range overlap extensively with the Lab Duck's historic territory.",
-      "againstText": "Diverged ~8 Mya. The Lab Duck's uniquely shaped bill suggests a specialised foraging method not present in eiders.",
+      "score": 76,
+      "habitat": "Arctic coastal tundra & shallow marine",
+      "range": "Alaska & Northern Russia",
+      "mass": "0.9 kg",
+      "divTime": "~7 Mya",
+      "tags": ["Vulnerable", "Seaduck", "Benthic forager"],
+      "forText": "Specialised bill morphology for extracting benthic invertebrates aligns more closely with the Labrador duck's inferred foraging strategy than the common eider.",
+      "againstText": "Primarily Pacific distribution — limited geographic overlap with the Labrador duck's Atlantic range. Declining population adds conservation risk to any pairing programme.",
       "ecoFactors": {
-        "habitatOverlap": 65,
-        "climateMatch": 70,
-        "trophicPresence": 60,
+        "habitatOverlap": 52,
+        "climateMatch": 72,
+        "trophicPresence": 62,
         "timeSinceExtinction": 148,
-        "populationTrend": "stable"
+        "populationTrend": "decreasing"
       }
     },
     {
-      "modalKey": "scoter",
-      "name": "Surf Scoter",
-      "sci": "Melanitta perspicillata",
+      "modalKey": "mallard",
+      "name": "Mallard",
+      "sci": "Anas platyrhynchos",
       "icon": "🦆",
-      "score": 71,
-      "habitat": "Coastal marine & lakes",
-      "range": "North America",
-      "mass": "0.9 kg",
-      "divTime": "~10 Mya",
-      "tags": ["Least concern", "Diving duck", "Invertivore"],
-      "forText": "Native to eastern North America — shares the Labrador Duck's original coastal range and diving foraging strategy.",
-      "againstText": "More distant genomically. Freshwater breeding specialist vs the Lab Duck's obligate marine lifestyle.",
+      "score": 60,
+      "habitat": "Freshwater wetlands & coastal estuaries",
+      "range": "Worldwide",
+      "mass": "1.1 kg",
+      "divTime": "~12 Mya",
+      "tags": ["Least concern", "Dabbling duck", "Generalist"],
+      "forText": "Widest geographic range of any Anatidae — present throughout the Labrador duck's entire former Atlantic range. Best-annotated waterfowl genome available.",
+      "againstText": "Dabbling duck — completely different foraging strategy from the Labrador duck's deep diving and mollusc specialisation. Occupies a different ecological guild.",
       "ecoFactors": {
-        "habitatOverlap": 72,
-        "climateMatch": 65,
-        "trophicPresence": 57,
+        "habitatOverlap": 68,
+        "climateMatch": 62,
+        "trophicPresence": 40,
         "timeSinceExtinction": 148,
-        "populationTrend": "stable"
+        "populationTrend": "increasing"
       }
     }
   ]
