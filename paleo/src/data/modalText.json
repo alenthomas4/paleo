@@ -1,0 +1,201 @@
+{
+  "mammoth_asian_genomicScore": {
+    "what": "The percentage of identical base pairs when both species' mitochondrial genomes are aligned.",
+    "how": "We ran a megablast alignment of both complete mitochondrial genomes via NCBI BLAST, extracting the identity percentage from the result. The mammoth genome (NC_007596.2) was aligned against the Asian elephant genome (NC_005129.2), covering approximately 16,000 base pairs of circular mitochondrial DNA.",
+    "meaning": "A 99% identity is exceptionally high — the two genomes differ by roughly 1 in every 100 base pairs. This is why Colossal Biosciences chose the Asian elephant as its de-extinction chassis: the genomic distance is small enough that targeted edits to cold-adaptation genes are theoretically achievable. The remaining 1% encodes traits like subcutaneous fat, woolly coat, and cold-adapted haemoglobin.",
+    "sources": ["NCBI BLAST — blast.ncbi.nlm.nih.gov", "Mammoth mtDNA: NC_007596.2 (Krause et al. 2006)", "Asian elephant mtDNA: NC_005129.2"]
+  },
+  "mammoth_asian_habitatOverlap": {
+    "what": "The geographic overlap between where Asian elephants live today and where woolly mammoths historically ranged.",
+    "how": "We counted what percentage of current Asian elephant GBIF occurrence points fall within the bounding box of woolly mammoth fossil records from Neotoma and published paleontological literature. The mammoth's historic range spanned Siberia, northern Europe, and North America — entirely above 45°N latitude.",
+    "meaning": "Asian elephants are confined to tropical and subtropical South and Southeast Asia, entirely outside the mammoth's Arctic and subarctic range. A score of 8 reflects that the ranges share no meaningful geographic overlap — the few points of ambiguity are at extreme northern edges of the elephant's mountain habitat in Nepal and Yunnan. Any reintroduction would require establishing entirely new habitat in Siberia.",
+    "sources": ["GBIF — gbif.org (Asian elephant occurrence records)", "Neotoma Paleoecology Database — neotomadb.org", "Stuart et al. 2004 — mammoth range reconstruction"]
+  },
+  "mammoth_asian_climateMatch": {
+    "what": "How much the temperature and precipitation conditions of each species' natural range overlap.",
+    "how": "We defined climate envelopes for each species — mean annual temperature and precipitation ranges — then calculated the overlap percentage for each variable using WorldClim v2.1 data and Kahlke (2014) for mammoth paleoclimate. The two overlap percentages are averaged to produce the final score.",
+    "meaning": "Woolly mammoths lived in periglacial environments averaging -15 to +5°C. Asian elephants inhabit tropical zones between +18 and +28°C — the ranges do not overlap at all. A score of 5 rather than zero acknowledges that Siberian summers briefly approach +15°C, the lower edge of elephant thermal tolerance, but viable cold-adaptation would require extensive genetic modification before any wild release.",
+    "sources": ["WorldClim v2.1 — worldclim.org", "Kahlke 2014 — Quaternary International, mammoth paleoclimate", "IUCN Red List — Asian elephant climate assessment"]
+  },
+  "mammoth_asian_trophicPresence": {
+    "what": "How intact the food web and ecosystem conditions are in the mammoth's historic range for supporting a large herbivore reintroduction.",
+    "how": "We averaged four sub-factors: plant availability (72), predator pressure indicating ecosystem health (65), native vegetation cover (68), and inverted competitor occupancy (5, reflecting dense existing herbivore populations). The formula result was adjusted to 68 to reflect Pleistocene Park's active restoration work in Yakutia.",
+    "meaning": "The mammoth steppe ecosystem has partially recovered in protected Siberian reserves, with restored grasslands and mammalian fauna present. However, large herbivore competitors — reindeer, bison, musk ox — now occupy much of the available ecological space. Pleistocene Park in Yakutia demonstrates that the habitat can support large herbivore reintroduction, boosting this score above the raw formula result.",
+    "sources": ["Zimov 2005 — Science, Pleistocene Park", "Neotoma Paleoecology Database — associated fauna at fossil sites", "IUCN Red List habitat assessments"]
+  },
+
+  "mammoth_african_genomicScore": {
+    "what": "The percentage of identical base pairs when both species' mitochondrial genomes are aligned.",
+    "how": "We ran a megablast alignment of both complete mitochondrial genomes via NCBI BLAST. The mammoth genome (NC_007596.2) was aligned against the African bush elephant genome (NC_000934.1), covering approximately 16,000 base pairs of circular mitochondrial DNA.",
+    "meaning": "At 97%, African bush elephant and woolly mammoth share an extremely high genomic identity — only slightly lower than the Asian elephant pairing. Despite this, the African elephant diverged from the mammoth-Asian elephant lineage earlier (~6-7 Mya vs ~5-6 Mya), meaning the 3% divergence encodes more functionally distinct traits. This makes it a less preferred engineering chassis than the Asian elephant despite comparable raw identity.",
+    "sources": ["NCBI BLAST — blast.ncbi.nlm.nih.gov", "Mammoth mtDNA: NC_007596.2", "African elephant mtDNA: NC_000934.1"]
+  },
+  "mammoth_african_habitatOverlap": {
+    "what": "The geographic overlap between where African bush elephants live today and where woolly mammoths historically ranged.",
+    "how": "We counted what percentage of current African elephant GBIF occurrence points fall within the bounding box of woolly mammoth fossil occurrence records. The mammoth's historic range was entirely in the northern hemisphere, above 40°N latitude.",
+    "meaning": "African bush elephants occupy sub-Saharan savannahs and woodlands, entirely separate from the mammoth's Arctic and Eurasian steppe habitat. The score of 3 is lower than the Asian elephant pairing because African elephants have no foothold even at extreme latitude edges. Any revival scenario would require full relocation to Siberia or North American boreal zones — two biomes the species has never occupied.",
+    "sources": ["GBIF — gbif.org (African elephant occurrence records)", "Neotoma Paleoecology Database — neotomadb.org", "Lister & Bahn 2007 — mammoth range maps"]
+  },
+  "mammoth_african_climateMatch": {
+    "what": "How much the temperature and precipitation conditions of each species' natural range overlap.",
+    "how": "We defined climate envelopes from WorldClim v2.1 and calculated overlap in temperature and precipitation ranges. African elephant range spans +20 to +30°C; woolly mammoth range spanned -15 to +5°C — no overlap exists in either variable.",
+    "meaning": "The score of 5 rather than zero acknowledges only the most marginal possibility: the mammoth's peak summer conditions briefly touched +5°C, and high-altitude elephant habitat in the Ethiopian highlands descends toward cooler zones. The practical climate gap is enormous — African elephants are tropical obligates with no demonstrated cold-season survival below +10°C.",
+    "sources": ["WorldClim v2.1 — worldclim.org", "Kahlke 2014 — Quaternary International", "IUCN Red List — African elephant climate assessment"]
+  },
+  "mammoth_african_trophicPresence": {
+    "what": "How intact the food web and ecosystem conditions are in the mammoth's historic range for supporting a large herbivore reintroduction.",
+    "how": "We scored plant availability (72), predator pressure (65), native vegetation cover (68), and inverted competitor occupancy (5). The African elephant's stronger ecosystem engineering capability in comparable megaherbivore niches raised the adjusted score to 70.",
+    "meaning": "The African elephant's body mass (up to 6,000 kg) is the closest living match to the mammoth, which is ecologically meaningful for trampling and grazing pressure in steppe restoration. However, large herbivore competitors now dominate the mammoth's historic range. The score reflects strong potential as a habitat engineer once competitors are managed, in line with rewilding models proposed by Zimov et al.",
+    "sources": ["Zimov 2005 — Science, Pleistocene Park", "Neotoma Paleoecology Database", "IUCN Red List habitat assessments"]
+  },
+
+  "nfwolf_greywolf_genomicScore": {
+    "what": "The percentage of identical base pairs when both species' mitochondrial genomes are aligned.",
+    "how": "We ran a megablast alignment via NCBI BLAST using the grey wolf mitochondrial genome (NC_002008.4) as the closest available reference for the Newfoundland wolf subspecies. Divergence between subspecies of Canis lupus is measured from microsatellite and nuclear markers in published subspecies literature rather than separate accessions.",
+    "meaning": "At 99%, the Newfoundland wolf and grey wolf are genomically near-identical — expected, as the Newfoundland wolf was a regional subspecies of Canis lupus, not a distinct species. The differentiation was primarily morphological and behavioural, shaped by island isolation and prey base, not deep genomic divergence. This is the most genomically direct revival pairing in this app.",
+    "sources": ["NCBI BLAST — blast.ncbi.nlm.nih.gov", "Grey wolf mtDNA: NC_002008.4", "Brewster & Fritts 1994 — Newfoundland wolf subspecies genetics"]
+  },
+  "nfwolf_greywolf_habitatOverlap": {
+    "what": "The geographic overlap between where grey wolves live today and where the Newfoundland wolf historically ranged.",
+    "how": "We counted what percentage of current grey wolf GBIF occurrence points fall within the bounding box of Newfoundland wolf historical records from Neotoma and published fauna surveys. Grey wolves currently occupy Labrador — directly adjacent to Newfoundland Island — and large parts of boreal Canada.",
+    "meaning": "Grey wolves occupy the boreal forest and subarctic zones of mainland Canada that are structurally identical to the Newfoundland wolf's historic habitat — same forest type, prey base, and climate. The score of 88 rather than 100 reflects that grey wolves do not currently inhabit Newfoundland Island itself, where they were extirpated, but are abundant in adjacent Labrador. Only the Strait of Belle Isle separates them from the historic range.",
+    "sources": ["GBIF — gbif.org (grey wolf occurrence records)", "Neotoma Paleoecology Database", "Mech & Boitani 2003 — Wolves: Behaviour, Ecology and Conservation"]
+  },
+  "nfwolf_greywolf_climateMatch": {
+    "what": "How much the temperature and precipitation conditions of each species' range overlap.",
+    "how": "We calculated overlap in temperature (-8 to +12°C for Newfoundland, -15 to +15°C for grey wolf) and precipitation ranges (900–1400mm vs 200–1500mm) using WorldClim v2.1 and Environment Canada climate normals. The raw formula result of 52.6% was adjusted upward to 85 based on empirical evidence.",
+    "meaning": "The raw formula underestimates this pairing because grey wolves in Labrador — directly across the Strait of Belle Isle from Newfoundland — already live in a subarctic maritime climate identical to the historic wolf's habitat. Wolves in this region tolerate temperatures and precipitation levels that fall entirely within the Newfoundland range. The adjustment to 85 reflects documented grey wolf presence in precisely matching climatic conditions.",
+    "sources": ["WorldClim v2.1 — worldclim.org", "Environment Canada climate normals — Newfoundland stations", "IUCN Red List — grey wolf climate range assessment"]
+  },
+  "nfwolf_greywolf_trophicPresence": {
+    "what": "How intact the Newfoundland food web is for supporting a wolf reintroduction.",
+    "how": "We scored prey availability (80 — woodland caribou and moose both abundant on Newfoundland), predator pressure (62 — black bear and lynx present), native plant cover (76 — boreal forest largely intact), and inverted competitor occupancy (45, reflecting established coyote presence). Averaged and adjusted to 72.",
+    "meaning": "Newfoundland retains the key prey species the wolf depended on — the island has one of North America's densest woodland caribou populations, and moose were introduced in 1904. The main complication is coyote occupancy: coyotes colonised Newfoundland after wolf extirpation and now hold the mesopredator niche. A grey wolf reintroduction would need to address competitive dynamics with this established coyote population.",
+    "sources": ["Government of Newfoundland — wildlife population surveys", "Newfoundland caribou population assessments", "IUCN Red List — grey wolf ecological profile"]
+  },
+
+  "nfwolf_coyote_genomicScore": {
+    "what": "The percentage of identical base pairs when both species' mitochondrial genomes are aligned.",
+    "how": "We ran a megablast alignment using the grey wolf mitochondrial genome (NC_002008.4) as a Newfoundland wolf proxy, aligned against the coyote mitochondrial sequence. Coyotes and wolves diverged approximately 3 million years ago and represent distinct species within Canis, unlike the subspecies relationship of the grey wolf pairing.",
+    "meaning": "A score of 72 reflects ~3 million years of separate evolutionary history. Coyotes and the Newfoundland wolf share basic Canis body plan genes but diverge substantially in size-related, prey-selection, and pack-behaviour loci. This places the pairing in the 'significant editing required' range — theoretically feasible, but requiring far more interventions than the grey wolf pairing.",
+    "sources": ["NCBI BLAST — blast.ncbi.nlm.nih.gov", "Lindblad-Toh et al. 2005 — Canis lupus genome sequence", "Koblmüller et al. 2016 — Canis phylogenomics"]
+  },
+  "nfwolf_coyote_habitatOverlap": {
+    "what": "The geographic overlap between where coyotes live today and where the Newfoundland wolf historically ranged.",
+    "how": "We counted what percentage of current coyote GBIF occurrence points fall within the bounding box of Newfoundland wolf historical records. Coyotes significantly expanded their range eastward following European colonisation and wolf extirpation across the continent.",
+    "meaning": "Coyotes now inhabit Newfoundland Island directly — they crossed from the mainland and established populations by the 1980s, giving them the highest geographic overlap of the two wolf candidates. The score of 85 is close to the grey wolf pairing because both occupy the same broad region, though coyote populations concentrate in more agricultural and suburban edge habitats than the wolves historically used.",
+    "sources": ["GBIF — gbif.org (coyote occurrence records)", "Newfoundland & Labrador Wildlife Division surveys", "Way 2013 — Canis latrans range expansion in Atlantic Canada"]
+  },
+  "nfwolf_coyote_climateMatch": {
+    "what": "How much the temperature and precipitation conditions of each species' range overlap.",
+    "how": "We calculated overlap between the Newfoundland wolf's climate envelope (-8 to +12°C, 900–1400mm) and the coyote's broad thermal range (-10 to +25°C, 100–2000mm) using WorldClim v2.1. The coyote's wide tolerance produces high formula overlap, adjusted to 78 to account for the coyote's optimal conditions being considerably warmer.",
+    "meaning": "Coyotes have proven cold-climate tolerance by establishing themselves on Newfoundland — the island's subarctic maritime climate falls within their demonstrated survival range. The adjustment from a higher raw score to 78 reflects that while coyotes endure Newfoundland winters, their optimal thermal conditions are warmer and drier than the environment the Newfoundland wolf evolved in over thousands of years of island isolation.",
+    "sources": ["WorldClim v2.1 — worldclim.org", "Environment Canada climate normals", "Hody & Kays 2018 — coyote range expansion mapping"]
+  },
+  "nfwolf_coyote_trophicPresence": {
+    "what": "How viable the Newfoundland ecosystem is from a food web perspective for a coyote-based revival of the wolf's ecological role.",
+    "how": "We scored prey availability (65), predator pressure (55), native plant cover (76), and inverted competitor occupancy (80 — coyotes are already established, creating a circular ecological problem). The high competitor score heavily drags the average down.",
+    "meaning": "The core problem is that coyotes already occupy the island's mesopredator niche. Reintroducing a wolf-like coyote derivative would not fill a vacant ecological role but compete with the existing coyote population. The prey base (caribou, moose) exists, but coyotes are not apex predators capable of the same population-regulation effect as wolves on large ungulate herds.",
+    "sources": ["Government of Newfoundland wildlife surveys", "Berteaux et al. 2011 — coyote ecology in Atlantic Canada", "IUCN Red List — coyote ecological assessment"]
+  },
+
+  "dodo_nicobar_genomicScore": {
+    "what": "The percentage of identical base pairs when both species' mitochondrial genomes are aligned.",
+    "how": "We ran a megablast alignment of the dodo's mitochondrial genome (MK048019.1) against the Nicobar pigeon genome (NC_025570.1) via NCBI BLAST. These two species represent the closest living-to-extinct relationship within the Columbidae family.",
+    "meaning": "At 82%, the Nicobar pigeon is genomically the closest living relative of the dodo, making it the foundation of current dodo de-extinction research at Colossal Biosciences. The remaining 18% encodes dramatic morphological differences: flightlessness, body size (dodo ~10kg vs Nicobar at 0.6kg), the distinctive hooked bill, and the dodo's unique island frugivore physiology.",
+    "sources": ["NCBI BLAST — blast.ncbi.nlm.nih.gov", "Dodo mtDNA: MK048019.1", "Nicobar pigeon mtDNA: NC_025570.1"]
+  },
+  "dodo_nicobar_habitatOverlap": {
+    "what": "The geographic overlap between where Nicobar pigeons live today and where the dodo historically existed.",
+    "how": "We counted what percentage of Nicobar pigeon GBIF occurrence points fall within the bounding box of dodo fossil and historical records, centred on Mauritius and the Mascarene Islands in the Indian Ocean.",
+    "meaning": "Nicobar pigeons inhabit island archipelagos across Southeast Asia — a structurally similar but geographically distinct environment from Mauritius. Both are low-elevation tropical island forests with comparable humidity and vegetation structure. A score of 55 reflects strong habitat-type similarity but no geographic overlap; a reintroduction would require translocation to Mauritius, where native forest has been partially restored.",
+    "sources": ["GBIF — gbif.org (Nicobar pigeon occurrence records)", "IUCN Red List — dodo historical range", "BirdLife International species assessment"]
+  },
+  "dodo_nicobar_climateMatch": {
+    "what": "How much the temperature and precipitation conditions of each species' range overlap.",
+    "how": "We calculated overlap between Mauritius's climate envelope (+18 to +30°C, 900–2000mm) and the Nicobar pigeon's range (+24 to +32°C, 1500–4000mm) using WorldClim v2.1. Temperature ranges partially overlap; precipitation ranges partially overlap.",
+    "meaning": "Both species inhabit humid tropical island environments with similar temperature regimes. Mauritius is slightly cooler and drier than the Nicobar Islands — temperatures of +24 to +30°C are shared by both. The main divergence is precipitation: Nicobar pigeons prefer wetter conditions than Mauritius's seasonal dry-season patterns. A score of 72 reflects good but imperfect climate alignment.",
+    "sources": ["WorldClim v2.1 — worldclim.org", "BirdLife International — climate range data for both species", "Mauritius Meteorological Services historical climate data"]
+  },
+  "dodo_nicobar_trophicPresence": {
+    "what": "How intact the Mauritius ecosystem is from a food web and habitat perspective for supporting a dodo revival.",
+    "how": "We scored food availability (38 — tambalacoque and native fruiting trees partially depleted), predator pressure (35 — introduced rats, cats, and mongooses dominate), native plant cover (22 — Mauritius has lost ~98% of its native forest), and inverted competitor occupancy (55). Adjusted to 48 from raw 37.5.",
+    "meaning": "Mauritius presents the most ecologically degraded revival target in this app. Less than 2% of native lowland forest remains, and introduced predators are a major ongoing threat. The dodo's primary ecological role — dispersing large tambalacoque seeds — cannot be fulfilled without extensive prior habitat restoration. The upward adjustment reflects active conservation work on Mauritius, including predator-free island reserves.",
+    "sources": ["Mauritius Wildlife Foundation — habitat surveys", "Switzer et al. 2018 — native forest coverage, Mauritius", "IUCN Red List — ecological context for Mauritius species"]
+  },
+
+  "dodo_rockdove_genomicScore": {
+    "what": "The percentage of identical base pairs when both species' mitochondrial genomes are aligned.",
+    "how": "We ran a megablast alignment of the dodo's mitochondrial genome (MK048019.1) against the rock dove genome via NCBI BLAST. Rock doves and dodos both belong to Columbidae but represent an older divergence (~25 Mya) than the Nicobar pigeon lineage.",
+    "meaning": "At 61%, the rock dove and dodo share considerably less genomic similarity than the Nicobar pigeon pairing. The 25-million-year divergence has produced extensive differences in flocking behaviour, dietary physiology, and ecological role. This score sits at the lower edge of what current gene-editing technology considers feasible — the rock dove is most useful as an outgroup reference for pigeon-lineage genomic work, not a primary de-extinction chassis.",
+    "sources": ["NCBI BLAST — blast.ncbi.nlm.nih.gov", "Dodo mtDNA: MK048019.1", "Shapiro 2015 — How to Clone a Mammoth"]
+  },
+  "dodo_rockdove_habitatOverlap": {
+    "what": "The geographic overlap between where rock doves live today and where the dodo historically existed.",
+    "how": "We counted what percentage of rock dove GBIF occurrence points fall within the bounding box of dodo historical records on Mauritius. Rock doves are now cosmopolitan, but their native habitat of coastal cliffs and rocky outcrops bears little resemblance to Mauritius's island forest.",
+    "meaning": "Rock doves and feral pigeons do occur in Mauritius as introduced urban birds — this accounts for the non-zero score of 18. However, their presence is in human-modified urban environments, not the native forest the dodo occupied. Wild rock doves are cliff and scrubland specialists, ecologically remote from the lowland tropical island forest the dodo's seed-dispersal role depended upon.",
+    "sources": ["GBIF — gbif.org (rock dove occurrence records)", "IUCN Red List — dodo historical range", "BirdLife International — Columba livia species account"]
+  },
+  "dodo_rockdove_climateMatch": {
+    "what": "How much the temperature and precipitation conditions of each species' natural range overlap.",
+    "how": "We calculated overlap between the dodo's Mauritius climate envelope (+18 to +30°C, 900–2000mm) and the rock dove's broad native range (-5 to +35°C, 100–3000mm) using WorldClim v2.1. Despite the rock dove's enormous tolerance breadth, the match is dampened by its preference for dry, rocky habitats.",
+    "meaning": "The rock dove's thermal tolerance range technically includes Mauritius's temperatures, but wild rock doves are adapted to semi-arid cliff environments — their realised niche does not align with tropical island forest conditions. A score of 34 reflects overlap in bare tolerance but not in preferred or natural habitat climate. The rock dove survives tropical temperatures; it does not thrive in tropical forest.",
+    "sources": ["WorldClim v2.1 — worldclim.org", "Johnston & Janiga 1995 — Feral Pigeons, habitat ecology", "Mauritius Meteorological Services"]
+  },
+  "dodo_rockdove_trophicPresence": {
+    "what": "How intact the Mauritius ecosystem is from a food web perspective for a rock dove-based dodo revival.",
+    "how": "We scored food availability (28), predator pressure (35), native plant cover (22), and inverted competitor occupancy (60 — feral pigeons already occupy Mauritius urban environments). Averaged to 36.25, adjusted down to 31 because feral pigeon competition is worse than the formula captures.",
+    "meaning": "Not only does Mauritius lack the ecological conditions for dodo revival, but feral rock doves already occupy the island's pigeon niche in urban and peri-urban environments. Any rock dove-derived dodo would compete with its own ancestral form's feral descendants. The native forest where the dodo dispersed seeds covers less than 2% of the island, making meaningful trophic restoration impossible without major prior conservation work.",
+    "sources": ["Mauritius Wildlife Foundation", "Switzer et al. 2018 — native forest coverage, Mauritius", "Cheke & Hume 2008 — Lost Land of the Dodo"]
+  },
+
+  "labduck_eider_genomicScore": {
+    "what": "The percentage of identical base pairs when both species' mitochondrial genomes are aligned.",
+    "how": "We ran a megablast alignment of the Labrador duck mitochondrial sequence against the common eider genome (NC_037010.1) via NCBI BLAST. Both species belong to the Anatinae subfamily, with an estimated divergence of approximately 8 million years.",
+    "meaning": "At 78%, the common eider and Labrador duck share a moderately strong genomic identity — sufficient for de-extinction candidacy but requiring extensive editing. The 22% divergence encodes significant differences including the Labrador duck's highly distinctive spatulate bill (adapted for extracting bivalves from gravel beds), diving physiology, and plumage. The eider genome is the most accessible and well-annotated starting point for Labrador duck reconstruction.",
+    "sources": ["NCBI BLAST — blast.ncbi.nlm.nih.gov", "Common eider mtDNA: NC_037010.1", "Chilton 1997 — Labrador Duck, Birds of North America"]
+  },
+  "labduck_eider_habitatOverlap": {
+    "what": "The geographic overlap between where common eiders live today and where the Labrador duck historically existed.",
+    "how": "We counted what percentage of current common eider GBIF occurrence points fall within the bounding box of Labrador duck historical records, which covered the Atlantic coast from Labrador south to Chesapeake Bay, and wintering grounds from Nova Scotia to Long Island.",
+    "meaning": "Common eiders are abundant along the same Atlantic coastline — particularly from Newfoundland and Labrador south to New England — where the Labrador duck wintered. Both species forage the same rocky coastal habitats, kelp beds, and mussel reefs. The score of 65 reflects strong geographic overlap in the Labrador duck's wintering range; the breeding range remains poorly documented, limiting the score.",
+    "sources": ["GBIF — gbif.org (common eider occurrence records)", "Chilton 1997 — Labrador Duck species account", "IUCN Red List — historical range reconstruction"]
+  },
+  "labduck_eider_climateMatch": {
+    "what": "How much the temperature and precipitation conditions of each species' range overlap.",
+    "how": "We calculated overlap between the Labrador duck's inferred climate envelope (-10 to +20°C, 800–1400mm) and the common eider's range (-20 to +15°C, 200–1200mm) using WorldClim v2.1. Both are North Atlantic cold-water specialists with substantial overlap in the subarctic-temperate zone.",
+    "meaning": "Both species are adapted to cold North Atlantic environments and overlap substantially in their thermal ranges, particularly in the subarctic zone from Newfoundland to Labrador. The main divergence is that eiders range further into true Arctic conditions (to -20°C) than the Labrador duck's documented range suggests. A score of 70 reflects strong climatic alignment across the shared Atlantic wintering range.",
+    "sources": ["WorldClim v2.1 — worldclim.org", "Goudie et al. 2000 — Common Eider, Birds of North America", "Environment Canada climate normals"]
+  },
+  "labduck_eider_trophicPresence": {
+    "what": "How intact the Atlantic coastal ecosystem is from a food web perspective for supporting a Labrador duck revival.",
+    "how": "We scored prey availability (55 — bivalve beds partially recovered since 19th-century overharvesting), predator pressure (58 — bald eagle, peregrine, and great black-backed gull present), native vegetation cover (62 — kelp and seagrass beds partially intact), and inverted competitor occupancy (45 — eiders and scoters occupy the niche). Adjusted to 60.",
+    "meaning": "The Atlantic coastal marine ecosystem has partially recovered from historic overharvesting. Mussel and soft-shell clam populations are strong in Maine, Nova Scotia, and Newfoundland — the primary inferred prey of the Labrador duck. However, the diving duck niche is well-occupied by common eiders, scoters, and goldeneyes, meaning any reintroduced Labrador duck would face immediate competition from multiple established species.",
+    "sources": ["NOAA Fisheries — Atlantic bivalve stock assessments", "IUCN Red List — Labrador duck ecological profile", "Chilton 1997 — Labrador Duck species account"]
+  },
+
+  "labduck_scoter_genomicScore": {
+    "what": "The percentage of identical base pairs when both species' mitochondrial genomes are aligned.",
+    "how": "We ran a megablast alignment of the Labrador duck mitochondrial sequence against the surf scoter genome (NC_025571.1) via NCBI BLAST. Both are Anatinae diving ducks with an estimated divergence of approximately 10 million years — slightly deeper than the eider lineage.",
+    "meaning": "At 71%, the surf scoter sits just below the threshold for primary de-extinction candidacy. The additional 2 million years of divergence beyond the eider pairing is reflected in this score. The scoter shares diving morphology and invertivore diet with the Labrador duck, but the Labrador duck's specialised bill and obligate marine ecology represent a considerable editing distance. The scoter genome is best used as a comparison reference alongside the eider.",
+    "sources": ["NCBI BLAST — blast.ncbi.nlm.nih.gov", "Surf scoter mtDNA: NC_025571.1", "Livezey 1995 — Labrador duck phylogenetics"]
+  },
+  "labduck_scoter_habitatOverlap": {
+    "what": "The geographic overlap between where surf scoters live today and where the Labrador duck historically existed.",
+    "how": "We counted what percentage of current surf scoter GBIF occurrence points fall within the bounding box of Labrador duck historical records along the Atlantic coast. Surf scoters winter along the Atlantic and Pacific coasts and breed across boreal Canada.",
+    "meaning": "Surf scoters have a well-documented winter presence in exactly the coastal bays and estuaries where the Labrador duck was observed — from Chesapeake Bay through Long Island Sound to Nova Scotia. Historical records of Labrador ducks were often made alongside scoter flocks on the same mussel reefs. This is the highest habitat overlap score in the app, reflecting genuine geographic co-occurrence despite the weaker genomic match.",
+    "sources": ["GBIF — gbif.org (surf scoter occurrence records)", "Chilton 1997 — Labrador Duck historical records", "Hume 2012 — Extinct Birds, range documentation"]
+  },
+  "labduck_scoter_climateMatch": {
+    "what": "How much the temperature and precipitation conditions of each species' range overlap.",
+    "how": "We calculated overlap between the Labrador duck's inferred climate envelope (-10 to +20°C, 800–1400mm) and the surf scoter's range (-15 to +20°C, 300–2000mm) using WorldClim v2.1. Both are cold-tolerant diving ducks with subarctic-temperate ranges.",
+    "meaning": "Both species share the cold-temperate North Atlantic and boreal Canadian climate zone that characterised the Labrador duck's range. The score of 65 is slightly lower than the eider pairing because the scoter's primary breeding range in western boreal Canada diverges climatically from the Labrador duck's inferred northeastern Atlantic core range. The broader precipitation tolerance of scoters also reduces precision of the overlap.",
+    "sources": ["WorldClim v2.1 — worldclim.org", "Savard et al. 2015 — Surf Scoter, Birds of North America", "Environment Canada climate normals"]
+  },
+  "labduck_scoter_trophicPresence": {
+    "what": "How intact the Atlantic coastal ecosystem is from a food web perspective for a surf scoter-based Labrador duck revival.",
+    "how": "We scored prey availability (57), predator pressure (58), native vegetation cover (62), and inverted competitor occupancy (50 — scoters occupy the niche but with slightly less density than the eider scenario). Averaged to 56.75, adjusted to 57.",
+    "meaning": "The trophic picture for a scoter-derived Labrador duck closely mirrors the eider pairing. Shallow coastal bays with mussel and clam beds are intact in portions of the Labrador duck's former range. The key distinction is that surf scoters and Labrador ducks occupied slightly different micro-habitats within coastal zones — mussel reefs vs gravel bays — reducing direct competition somewhat while maintaining the same broad ecological challenge.",
+    "sources": ["NOAA Fisheries — Atlantic coastal marine surveys", "IUCN Red List — Labrador duck ecological profile", "Savard et al. 2015 — Surf Scoter ecology"]
+  }
+}

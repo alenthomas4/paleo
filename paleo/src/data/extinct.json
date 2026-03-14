@@ -1,1 +1,58 @@
-[]
+[
+  {
+    "id": "mammoth",
+    "name": "Woolly Mammoth",
+    "sci": "Mammuthus primigenius",
+    "icon": "🦣",
+    "accent": "#60a5fa",
+    "period": "PLEISTOCENE · 4,000 BCE",
+    "epochType": "pleistocene",
+    "mass": "6,000 kg",
+    "role": "Ecosystem engineer",
+    "range": "Eurasia & North America",
+    "tags": ["Megaherbivore", "Cold-adapted", "Keystone species"],
+    "blurb": "Shaped the mammoth steppe through grazing — their loss cascaded through entire tundra ecosystems."
+  },
+  {
+    "id": "nfwolf",
+    "name": "Newfoundland Wolf",
+    "sci": "Canis lupus beothucus",
+    "icon": "🐺",
+    "accent": "#f87171",
+    "period": "MODERN · 1930 CE",
+    "epochType": "modern",
+    "mass": "45 kg",
+    "role": "Apex predator",
+    "range": "Newfoundland, Canada",
+    "tags": ["Island subspecies", "Apex predator", "Pack hunter"],
+    "blurb": "Hunted to extinction by European settlers. Its disappearance unravelled the island's predator-prey balance."
+  },
+  {
+    "id": "dodo",
+    "name": "Dodo",
+    "sci": "Raphus cucullatus",
+    "icon": "🦤",
+    "accent": "#a78bfa",
+    "period": "EARLY MODERN · 1681 CE",
+    "epochType": "early-modern",
+    "mass": "10 kg",
+    "role": "Seed disperser",
+    "range": "Mauritius",
+    "tags": ["Flightless", "Island endemic", "Frugivore"],
+    "blurb": "Critical disperser of the tambalacoque tree. Its extinction caused a ripple of plant die-offs across Mauritius."
+  },
+  {
+    "id": "labduck",
+    "name": "Labrador Duck",
+    "sci": "Camptorhynchus labradorius",
+    "icon": "🦆",
+    "accent": "#fb923c",
+    "period": "MODERN · 1878 CE",
+    "epochType": "modern",
+    "mass": "1.0 kg",
+    "role": "Benthic forager",
+    "range": "Eastern North America",
+    "tags": ["Seaduck", "Molluscivore", "Coastal endemic"],
+    "blurb": "The first North American bird driven extinct post-colonisation. Its specialised bill suggests a unique coastal foraging niche."
+  }
+]

@@ -1,1 +1,178 @@
-[]
+{
+  "mammoth": [
+    {
+      "modalKey": "asian",
+      "name": "Asian Elephant",
+      "sci": "Elephas maximus",
+      "icon": "🐘",
+      "score": 99,
+      "habitat": "Tropical & subtropical forest",
+      "range": "South & Southeast Asia",
+      "mass": "4,000 kg",
+      "divTime": "5–6 Mya",
+      "tags": ["Endangered", "Herbivore", "Highly social"],
+      "forText": "Closest living relative — Colossal Biosciences already targeting this pair for de-extinction. Genome is well sequenced and deeply annotated.",
+      "againstText": "Cold-adapted gene suite still largely unknown. Significant engineering needed for mammoth-specific traits like fat deposition and fur growth.",
+      "ecoFactors": {
+        "habitatOverlap": 8,
+        "climateMatch": 5,
+        "trophicPresence": 68,
+        "timeSinceExtinction": 6000,
+        "populationTrend": "decreasing"
+      }
+    },
+    {
+      "modalKey": "african",
+      "name": "African Bush Elephant",
+      "sci": "Loxodonta africana",
+      "icon": "🐘",
+      "score": 97,
+      "habitat": "Savannah & open woodland",
+      "range": "Sub-Saharan Africa",
+      "mass": "6,000 kg",
+      "divTime": "6–7 Mya",
+      "tags": ["Vulnerable", "Herbivore", "Megafauna"],
+      "forText": "Body mass closely matches mammoth profile. Strong ecosystem-engineering behaviour well documented across African biomes.",
+      "againstText": "Greater genomic divergence than Asian elephant. Tropical specialist — cold-adaptation pathway significantly less clear.",
+      "ecoFactors": {
+        "habitatOverlap": 3,
+        "climateMatch": 5,
+        "trophicPresence": 70,
+        "timeSinceExtinction": 6000,
+        "populationTrend": "decreasing"
+      }
+    }
+  ],
+  "nfwolf": [
+    {
+      "modalKey": "greywolf",
+      "name": "Grey Wolf",
+      "sci": "Canis lupus",
+      "icon": "🐺",
+      "score": 99,
+      "habitat": "Boreal forest & tundra",
+      "range": "North America, Eurasia",
+      "mass": "40 kg",
+      "divTime": "0.3 Mya",
+      "tags": ["Least concern", "Apex predator", "Pack animal"],
+      "forText": "Nearest continental relative. Pack structure and prey specialisation directly analogous to the Newfoundland subspecies. Already proven as a trophic restorer.",
+      "againstText": "Island isolation shaped a distinct skull morphology and prey preference — not a direct drop-in replacement for the beothucus subspecies.",
+      "ecoFactors": {
+        "habitatOverlap": 88,
+        "climateMatch": 85,
+        "trophicPresence": 72,
+        "timeSinceExtinction": 94,
+        "populationTrend": "stable"
+      }
+    },
+    {
+      "modalKey": "coyote",
+      "name": "Coyote",
+      "sci": "Canis latrans",
+      "icon": "🦊",
+      "score": 72,
+      "habitat": "Grassland, scrubland & suburban",
+      "range": "North & Central America",
+      "mass": "13 kg",
+      "divTime": "3.0 Mya",
+      "tags": ["Least concern", "Generalist", "Highly adaptable"],
+      "forText": "Shares Atlantic Canada's coastal ecosystems and is known to rapidly fill trophic gaps left by wolves. Highly plastic predator.",
+      "againstText": "Trophic mismatch — coyotes are mesopredators. Their prey base doesn't replicate the wolf's role in regulating caribou and moose populations.",
+      "ecoFactors": {
+        "habitatOverlap": 85,
+        "climateMatch": 78,
+        "trophicPresence": 38,
+        "timeSinceExtinction": 94,
+        "populationTrend": "increasing"
+      }
+    }
+  ],
+  "dodo": [
+    {
+      "modalKey": "nicobar",
+      "name": "Nicobar Pigeon",
+      "sci": "Caloenas nicobarica",
+      "icon": "🕊️",
+      "score": 82,
+      "habitat": "Coastal & lowland forest",
+      "range": "Southeast Asian islands",
+      "mass": "0.6 kg",
+      "divTime": "~20 Mya",
+      "tags": ["Near threatened", "Frugivore", "Island endemic"],
+      "forText": "Closest living relative of the dodo. Genome provides the best available reference for dodo sequence reconstruction.",
+      "againstText": "20 million years of independent evolution. Very different body plan and size — extensive genomic reconstruction required.",
+      "ecoFactors": {
+        "habitatOverlap": 55,
+        "climateMatch": 72,
+        "trophicPresence": 48,
+        "timeSinceExtinction": 345,
+        "populationTrend": "decreasing"
+      }
+    },
+    {
+      "modalKey": "rockdove",
+      "name": "Rock Dove",
+      "sci": "Columba livia",
+      "icon": "🕊️",
+      "score": 61,
+      "habitat": "Cliffs, urban & coastal areas",
+      "range": "Worldwide",
+      "mass": "0.35 kg",
+      "divTime": "~25 Mya",
+      "tags": ["Least concern", "Generalist", "Highly adaptable"],
+      "forText": "Well-studied genome with decades of breeding research. Accessible reference for pigeon-lineage genomic work.",
+      "againstText": "Diverged ~25 Mya. Urban generalist with no island frugivore behaviour — seed dispersal ecology entirely absent from its profile.",
+      "ecoFactors": {
+        "habitatOverlap": 18,
+        "climateMatch": 34,
+        "trophicPresence": 31,
+        "timeSinceExtinction": 345,
+        "populationTrend": "increasing"
+      }
+    }
+  ],
+  "labduck": [
+    {
+      "modalKey": "eider",
+      "name": "Common Eider",
+      "sci": "Somateria mollissima",
+      "icon": "🦆",
+      "score": 78,
+      "habitat": "Rocky coastline & marine",
+      "range": "North Atlantic & Arctic",
+      "mass": "2.2 kg",
+      "divTime": "~8 Mya",
+      "tags": ["Least concern", "Seaduck", "Molluscivore"],
+      "forText": "Shares the same molluscivore niche along North Atlantic coastlines. Habitat and range overlap extensively with the Lab Duck's historic territory.",
+      "againstText": "Diverged ~8 Mya. The Lab Duck's uniquely shaped bill suggests a specialised foraging method not present in eiders.",
+      "ecoFactors": {
+        "habitatOverlap": 65,
+        "climateMatch": 70,
+        "trophicPresence": 60,
+        "timeSinceExtinction": 148,
+        "populationTrend": "stable"
+      }
+    },
+    {
+      "modalKey": "scoter",
+      "name": "Surf Scoter",
+      "sci": "Melanitta perspicillata",
+      "icon": "🦆",
+      "score": 71,
+      "habitat": "Coastal marine & lakes",
+      "range": "North America",
+      "mass": "0.9 kg",
+      "divTime": "~10 Mya",
+      "tags": ["Least concern", "Diving duck", "Invertivore"],
+      "forText": "Native to eastern North America — shares the Labrador Duck's original coastal range and diving foraging strategy.",
+      "againstText": "More distant genomically. Freshwater breeding specialist vs the Lab Duck's obligate marine lifestyle.",
+      "ecoFactors": {
+        "habitatOverlap": 72,
+        "climateMatch": 65,
+        "trophicPresence": 57,
+        "timeSinceExtinction": 148,
+        "populationTrend": "stable"
+      }
+    }
+  ]
+}
